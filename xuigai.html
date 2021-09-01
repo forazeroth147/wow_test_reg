@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head><!--个人资料修改页面-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>个人资料修改</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content=""/>
+<meta name="copyright" content=""/>
+<style>
+.regContent div.submit input{ background:none;background:url(Images/btn5.png) 0px -40px no-repeat;}
+</style>
+
+<link href="style/reg_log.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/reg_log.js"></script>
+<script src="js/xuigai.js"></script>
+</head>
+<body class="body_reg">
+<!-- header -->
+<div id="header" style="width:1050px;">
+  <div class="topher clearfix">
+ <a href="index.html" class="logo_lngk"><img src="Images/logo.png" /></a>
+ <div class="nav">
+  <ul class="Menu">
+   <li><a href="index.html"><h4>首页</h4>HOME</a></li>
+    <li><a href="self.html"><h4>个人主页</h4>SELF</a></li>
+	<li><a href="xuigai.html"><h4>资料修改</h4>XUIGAI</a></li>
+	<li><a href="tousu.html"><h4>投诉反馈</h4>TOUSU</a></li>
+	<li><a href="pass.html"><h4>忘记密码</h4>PASS</a></li>
+  </ul>
+ </div>
+ <div class="reg_user right">
+ <a href="#"></a><a href="#">退出</a>
+ </div>
+</div>
+</div>
+
+	<div class="webRegCount">
+	<div class="middle_new">
+    	<div class="regCountLeft">
+        	<h4>个人资料修改页面</h4>
+        </div>
+		
+        <div class="regCountRight">
+
+        	<div class="ico weixin" _mouseIn="0"><div class="weixinContent"></div></div>
+            <div class="ico phone" _mouseIn="0"><div class="phoneContent">服务热线：4006-822-826</div></div>
+            <!-- Baidu Button BEGIN -->
+         <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" style="float:left; width:32px; height:32px; margin-right:15px; margin-top:9px; padding:0; background:url(Images/comm.png) 0 -355px no-repeat;">
+            <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more" style=" background:none;"></a></div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+            
+            
+                <span class="bds_more" style="background:none !important; width:100%; height:100%; padding:0;">&nbsp;</span>
+            </div>
+           
+            <div class="ico weibo"><a  href="#" title="关注建站官方微博，了解最新动态"></a></div>
+			<div class="ico ts"><a  href="tousu.html"  title="投诉与建议"></a></div>
+        </div>
+    </div>
+</div><!--头部-->
+
+
+
+<!-- regcontent -->
+<div class="regContent">
+<p class="red">注： 值为空默认不修改</p>
+  <form>
+  <input type="hidden" value="" class="id" name="id">
+   <div class="old_pass"><label>旧 密 码</label>
+  <input type="password" required value="" name="old_pass"  onpaste="return false"><p><i>*</i><span>6-9个字符，区分大小写</span></p>
+             <!--<p><img src="Images/warn.png"><span>请输入密码</span></p>-->
+              </div><div class="clear"></div>
+                                               
+  <div class="pass"><label>新 密 码</label>
+  <input type="password" required value="" name="pass" onpaste="return false"><p><i>*</i><span>6-9个字符，区分大小写</span></p>
+             <!--<p><img src="Images/warn.png"><span>请输入密码</span></p>-->
+              </div><div class="clear"></div>
+              
+              
+  <div class="pass2"><label>确认密码</label>
+  <input type="password" required value="" name="pass2" onpaste="return false"><p><i>*</i></p>
+                                                   <!--  <p><img src="Images/warn.png"><span>请输入确认密码</span></p>-->
+                                                    </div> <div class="clear"></div>   
+                                                      
+ <div class="problem"><label>你的问题</label>
+ <select  name="ask">
+ <option value="1">请选择你的提问</option>
+ <option value="你的职业">你的职业</option>
+ <option value="你的爱好">你的爱好</option>
+ <option value="你最喜欢的风景">你最喜欢的风景</option>
+ <option value="你最敬重的老师">你最敬重的老师</option>
+ </select>
+ <input type="text" name="answer" value=""> <span class="clear"></span>  
+ <p style="height:30px; line-height:30px; margin-bottom:5px;"> <span class="red"></span></p>
+ <p class="gray">禁止特殊字符，如果设置了问题，登录的时候需要回答</p>
+ </div> <div class="clear"></div>  
+   
+   <div class="problem2"><label class="label">自定义问题</label>
+   <input type="text" value="" name="ask2">
+   <input type="text" value="" name="answer2">
+   <p style="height:30px; line-height:30px; margin-bottom:5px;margin-left:10px"> <span class="red"></span></p>
+   <p class="gray"> &nbsp;  &nbsp; 问题、回答各自不得少于5个或超过10个字符</p>
+   </div> <div class="clear"></div>  
+    
+   <div class="email"> <label>邮 &nbsp; &nbsp; &nbsp;箱</label>
+   <input  type="text"  value="" name="email" required><p><i>*</i><span>请输入邮箱用于找回密码</span></p>
+                                           <!--<p><img src="Images/warn.png"><span>请输入邮箱</span></p>--></div><div class="clear"></div>  
+    <div class="wed"><label> 网站用途</label>
+    <label>企业/组织官网<input type="radio" value="企业/组织官网" name="wed" ></label>
+    <label>推广产品<input type="radio" value="推广产品" name="wed"></label>
+    <label>在线商城<input type="radio" value="在线商城" name="wed"></label>
+    <label>发布信息<input type="radio" value="发布信息" name="wed"></label>
+    <label>个人网站<input type="radio" value="个人网站" name="wed"></label>
+    <label>其他<input type="radio" value="其他" name="wed"></label>
+  </div><div class="clear"></div>
+    
+    <div class="submit">
+    <input type="button" value="">
+    </div>
+  </form> 
+</div>
+<!-- regcontent end -->
+
+<div class="iframe">
+<div class="border">协议声明<span></span></div><div class="clear"></div>
+<div class="content">
+注册后成为我们的一员，您可以对我们的文章发表评论，我们的级别分为：初级、普通50分、会员200分、VIP会员500分，不同的级别，有不同的阅读权限，每天登陆加一分，评论加一分。您发表的评论需要我们的审核才能再产品内容页面显示，请稍后等待，敬请见谅。
+</div></div>
+
+
+<!-- service -->
+
+<div id="autoHeightDiv"></div>
+
+<div class="footLineGray"></div>
+<div class="lineWhite"></div>
+<div class="webFoot">
+	<div class="foot middle" style="width:1040px;">
+		<div class="footLeft">
+			<span><a  href="index.html" >首页</a></span>
+			<span><a  href="javascript:;" >关于本站</a></span>
+			<span><a  href="javascript:;" >帮助中心</a></span>
+			<span><a  href="javascript:;">支付方式</a></span>
+			<span><a  href="javascript:;">服务条款</a></span>
+			<span><a  href="javascript:;" >推广客户</a></span>
+			<span><a  href="javascript:;" >省市建站</a></span>
+			<span><a  href="javascript:;" title="自助建站">自助建站</a></span>
+			<span><a  href="javascript:;" title="网站建设">网站建设</a></span>
+		</div>
+		<!--<div class="footMiddle"></div>-->
+		<div class="footRight">Copyright <font style="font-family:'微软雅黑';">&copy;</font> 2010-2016 广州互联网科技股份有限公司 <a href="javascript:;" rel="nofollow">粤ICP备10235580号</a> 股票代码：832828</div>
+	</div>
+</div>
+
+
+<script src="js/child_nav.js"></script>
+<style type="text/css">
+#qiao-icon-wrap {display:none !important;}
+</style>
+
+
+
+</body>
+
+</html>

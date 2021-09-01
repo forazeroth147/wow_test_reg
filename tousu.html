@@ -1,0 +1,158 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>投诉反馈</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content=""/>
+<meta name="copyright" content=""/>
+<link href="style/reg_log.css" rel="stylesheet" type="text/css" />
+<style>
+.regContent div.account{width:600px;}
+.regContent div label{ margin-right:15px;}
+body{ position:relative;top:0px;}
+</style>
+<script src="js/jquery.js"></script>
+<script src="js/reg_log.js"></script>
+<script src="js/cookie.js"></script>
+<script  src="js/tousu.js"></script>
+</head>
+<body class="body_reg">
+<!-- header -->
+<div id="header" style="width:1050px;">
+  <div class="topher clearfix">
+ <a href="index.html" class="logo_lngk"><img src="Images/logo.png" /></a>
+   <div class="nav">
+      <ul class="Menu">
+          <li><a href="index.html"><h4>首页</h4>HOME</a></li>
+            <li><a href="self.html"><h4>个人主页</h4>SELF</a></li>
+            <li><a href="xuigai.html"><h4>资料修改</h4>XUIGAI</a></li>
+            <li><a href="tousu.html"><h4>投诉反馈</h4>TOUSU</a></li>
+            <li><a href="pass.html"><h4>忘记密码</h4>PASS</a></li>
+      </ul>
+     </div>
+     <div class="reg_user right">
+        <a href="self.html" class="delu_name"></a><a href="php/out.php" class="margin">退出</a></div>
+     </div>
+</div>
+</div>
+
+	<div class="webRegCount">
+	<div class="middle_new">
+    	<div class="regCountLeft">
+        	<h4>反馈我们</h4>
+        </div>
+		
+        <div class="regCountRight">
+        	<div class="ico weixin" _mouseIn="0"><div class="weixinContent"></div></div>
+            <div class="ico phone" _mouseIn="0"><div class="phoneContent">服务热线：4006-822-826</div></div>
+            <!-- Baidu Button BEGIN -->
+         <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" style="float:left; width:32px; height:32px; margin-right:15px; margin-top:9px; padding:0; background:url(Images/comm.png) 0 -355px no-repeat;">
+            <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more" style=" background:none;"></a></div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+            
+            
+                <span class="bds_more" style="background:none !important; width:100%; height:100%; padding:0;">&nbsp;</span>
+            </div>
+           
+            <div class="ico weibo"><a  href="javascript:;" title="关注建站官方微博，了解最新动态"></a></div>
+			<div class="ico ts"><a  href="tousu.html" title="投诉与建议"></a></div>
+        </div>
+    </div>
+</div><!--头部-->
+
+
+
+<!-- regcontent -->
+<div class="regContent">
+<form>
+ <div class="type">
+ <label>反馈类型</label>
+ <select name="type">
+    <option value="0">请选择类型</option>
+    <option value='1'>服务投诉</option>
+    <option value='2'>功能建议</option>
+    <option value='3'>申诉</option>
+    <option value='4'>举报</option>
+ </select><i>*</i> 
+  </div>
+
+<div  class="account">
+ <!-- <a href="javascript:vido(0)" class="account_img"><img src="Images/help.png"></a>--> 
+ <label>用 户 名</label><input  type="text"  required value="" name="name"><p><i>*</i><span>4-10个字母、数字组合，例如abcd,abc123等</span></p>
+                                             <!--  <p><img src="Images/warn.png"><span>请输入账号</span></p>--> </div><div class="clear"></div> 
+
+   <div class="email2"><label>邮 &nbsp; &nbsp; &nbsp;箱</label>
+   <input  type="text"  required value="" name="email"><p><i>*</i><span>我们的答复会通过邮箱通知您</span></p>
+                                           <!--<p><img src="Images/warn.png"><span>请输入邮箱</span></p>--></div><div class="clear"></div> 
+                                                                                          
+  <div class="phone"><label>联系电话</label>
+  <input type="text"  value="" name="phone"><p><span class="red"></span> &nbsp; &nbsp;<span>为了更好地解决您的问题，建议留下您的联系电话</span></p>
+ </div><div class="clear"></div>
+              
+              
+  <div class="qq"><label>联系 QQ</label>
+  <input type="text"  value="" name="qq"><p><span class="red"></span> &nbsp; &nbsp;<span>留下的您的QQ能更方便的联系到您</span></p>
+ </div> <div class="clear"></div>   
+                                                  
+ <div class="describe"><label>问题描述 </label> 
+  &nbsp;<textarea name="describe" required maxlength="1000"></textarea><p><i>*</i><span>请填写您的问题，不得少于10个字,多余150个字</span></p>
+ </div><div class="clear"></div>   
+  
+  <div class="ver">
+  <label>验证码</label>
+  <input type="text" value="" name="ver" required><img src="php/ver.php"  class="ver_img"><p><i>*</i><span></span></p>
+  </div><div class="clear"></div>   
+  
+    <div class="submit2">
+    <input type="button" value="提交">
+    </div> 
+  </form> 
+</div>
+<!-- regcontent end -->
+  
+   
+<div class="iframe">
+<div class="border">协议声明<span></span></div><div class="clear"></div>
+<div class="content">
+注册后成为我们的一员，您可以对我们的网站设计建设方面发表评论，我们的级别分为：初级、普通50分、会员200分、VIP会员500分，不同的级别，如果需要我们建站有相应的优惠，每10分优惠一元，每天登陆加一分，评论加一分。您发表的评论需要我们的审核才能在产品页面显示，请稍后等待，敬请见谅。
+</div></div>
+
+
+<!-- service -->
+
+<div id="autoHeightDiv"></div>
+
+<div class="footLineGray"></div>
+<div class="lineWhite"></div>
+<div class="webFoot">
+	<div class="foot middle" style="width:1040px;">
+		<div class="footLeft">
+			<span><a  href="index.html" >首页</a></span>
+			<span><a  href="javascript:;" >关于本站</a></span>
+			<span><a  href="javascript:;" >帮助中心</a></span>
+			<span><a  href="javascript:;">支付方式</a></span>
+			<span><a  href="javascript:;">服务条款</a></span>
+			<span><a  href="javascript:;" >推广客户</a></span>
+			<span><a  href="javascript:;" >省市建站</a></span>
+			<span><a  href="javascript:;" title="自助建站">自助建站</a></span>
+			<span><a  href="javascript:;" title="网站建设">网站建设</a></span>
+		</div>
+		<!--<div class="footMiddle"></div>-->
+		<div class="footRight">Copyright <font style="font-family:'微软雅黑';">&copy;</font> 2010-2016 广州互联网科技股份有限公司 <a href="javascript:;" rel="nofollow">粤ICP备10235580号</a> 股票代码：832828</div>
+	</div>
+</div>
+<script src="js/child_nav.js"></script>
+<style type="text/css">
+#qiao-icon-wrap {display:none !important;}
+</style>
+
+
+
+</body>
+
+</html>
